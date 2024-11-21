@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TheMusicPlace - Music Retailer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/custom.css">
   </head>
-  
   <body>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">TheMusicPlace</a>
+        <a class="navbar-brand display-6" href="index.html">TheMusicPlace</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,7 +48,87 @@
       </div>
     </nav>
 
-    <h1>Hello, world!</h1>
+    <main class="container">
+
+      <h1 class="display-1 text-center">Welcome to The Music Place!</h1>
+
+      <div id="carouselCaptions" class="carousel slide shadow-sm">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <a href="products/guitars.html">
+            <div class="carousel-item active">
+              <img src="images/products/guitars.jpg" class="d-block w-100" alt="Electric Guitar">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Guitars</h5>
+                <p>Shop for our guitars.</p>
+              </div>
+            </div>
+          </a>
+          <a href="products/basses.html">
+            <div class="carousel-item">
+              <img src="images/products/basses.jpg" class="d-block w-100" alt="Electric Bass Guitar">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Basses</h5>
+                <p>Shop for our basses.</p>
+              </div>
+            </div>
+          </a>
+          <a href="products/effectpedals.html">
+            <div class="carousel-item">
+              <img src="images/products/effectpedals.jpg" class="d-block w-100" alt="Effect Pedals">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Effect Pedals</h5>
+                <p>Shop for our effect pedals.</p>
+              </div>
+            </div>
+          </a>
+          <a href="products/percussion.html">
+            <div class="carousel-item">
+              <img src="images/products/percussion.jpg" class="d-block w-100" alt="Drum Kit">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Percussion</h5>
+                <p>Shop for our percussion.</p>
+              </div>
+            </div>
+          </a>
+          <a href="products/microphones.html">
+            <div class="carousel-item">
+              <img src="images/products/microphones.jpg" class="d-block w-100" alt="Microphone">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Microphones</h5>
+                <p>Shop for our microphones.</p>
+              </div>
+            </div>
+          </a>
+          <a href="products/audiointerfaces.html">
+            <div class="carousel-item">
+              <img src="images/products/audiointerfaces.jpg" class="d-block w-100" alt="Audio Interfaces">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Audio Interfaces</h5>
+                <p>Shop for our audio interfaces.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
