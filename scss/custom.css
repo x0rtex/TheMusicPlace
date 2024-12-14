@@ -51,4 +51,8 @@
   cursor: pointer;
 }
 
+#payment-failure, #payment-success {
+  display: none;
+}
+
 /*# sourceMappingURL=custom.css.map */
