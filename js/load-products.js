@@ -1,27 +1,30 @@
 export async function loadProducts(category) {
-    const products = await parseData();
-    const productsElement = document.getElementById('products');
-
-    if (products[category] === undefined) {
-        console.error(`No products found for index ${category}`)
-        return;
+    try {
+        const products = await getProducts(category);
+        renderProducts(products);
+    } catch (error) {
+        console.error(`Error loading products: ${error}`);
     }
+}
 
-    products[category].forEach(product => {
+async function getProducts(category) {
+    try {
+        const response = await fetch('../data/products/products.json');
+        const data = await response.json();
+        return data[category];
+    } catch (error) {
+        console.error(`Error loading products: ${error}`);
+        return [];
+    }
+}
+
+function renderProducts(products) {
+    const productsElement = document.getElementById('products');
+    products.forEach(product => {
         const productHTML = createCard(product);
         productsElement.innerHTML += productHTML;
     });
-
-    const addToCartElements = productsElement.querySelectorAll('#add-to-cart');
-    addToCartElements.forEach(element => {
-        element.addEventListener("click", addToCart);
-    });
-}
-
-async function parseData() {
-    const productsPath = '../data/products/products.json';
-    const response = await fetch(productsPath);
-    return await response.json();
+    addEventListeners();
 }
 
 function createCard(product) {
@@ -39,4 +42,11 @@ function createCard(product) {
       </div>
     </div>
   `;
+}
+
+function addEventListeners() {
+    const addToCartElements = document.querySelectorAll('#add-to-cart');
+    addToCartElements.forEach(element => {
+        element.addEventListener("click", addToCart);
+    });
 }
