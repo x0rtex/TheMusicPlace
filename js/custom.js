@@ -5,7 +5,7 @@ if (localStorage.getItem('checkout') == null) {
 }
 
 const checkout = localStorage.getItem('checkout');
-document.querySelector('#checkout').innerHTML = checkout;
+document.querySelector('#checkout').innerHTML = `<span class="checkout-count"> ${checkout}</span>`;
 
 const logoutElement = document.getElementById('login-logout');
 logoutElement.addEventListener("click", logout);
