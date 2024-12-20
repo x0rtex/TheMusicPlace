@@ -9,52 +9,85 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">TheMusicPlace</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Products
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="products/guitars.html">Guitars</a></li>
-                        <li><a class="dropdown-item" href="products/basses.html">Basses</a></li>
-                        <li><a class="dropdown-item" href="products/effect-pedals.html">Effect Pedals</a></li>
-                        <li><a class="dropdown-item" href="products/percussion.html">Percussion</a></li>
-                        <li><a class="dropdown-item" href="products/microphones.html">Microphones</a></li>
-                        <li><a class="dropdown-item" href="products/audio-interfaces.html">Audio Interfaces</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a id="login-logout" class="nav-link" href="login.html">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="user-details.html">User Details</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand display-6" href="index.html">TheMusicPlace</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products/guitars.html">Guitars</a></li>
+                            <li><a class="dropdown-item" href="products/basses.html">Basses</a></li>
+                            <li><a class="dropdown-item" href="products/effect-pedals.html">Effect Pedals</a></li>
+                            <li><a class="dropdown-item" href="products/percussion.html">Percussion</a></li>
+                            <li><a class="dropdown-item" href="products/microphones.html">Microphones</a></li>
+                            <li><a class="dropdown-item" href="products/audio-interfaces.html">Audio Interfaces</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="login-logout" class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="user-details active" aria-current="page" class="nav-link" href="user-details.html">User Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html">
+                            <button type="button">Checkout<span id="checkout"></span></button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
+    </nav>
+
+    <h1>User Details</h1>
+    <form id="user-details" name="user-details" action="" method="get">
+        <div class="form-group">
+            <label for="firstNameID">First name</label>
+            <input type="text" class="form-control" id="firstNameID" name="firstname" required pattern="[a-zA-Z]+">
+        </div>
+        <div class="form-group">
+            <label for="lastNameID">Last name</label>
+            <input type="text" class="form-control" id="lastNameID" name="lastname" required pattern="[a-zA-Z]+">
+        </div>
+        <div class="form-group">
+            <label for="dobID">Date of Birth</label>
+            <input type="date" class="form-control" id="dobID" name="dob" required>
+        </div>
+
+        <label for="address1ID">Address 1</label>
+        <input type="text" class="form-control" id="address1ID" name="address1" required>
+
+        <label for="address2ID">Address 2</label>
+        <input type="text" class="form-control" id="address2ID" name="address2" required>
+
+        <label for="address3ID">Address 3</label>
+        <input type="text" class="form-control" id="address3ID" name="address3" required>
+
+        <input type='submit' value="Update My Details">
+    </form>
 
 <script src="js/custom.js"></script>
+<script src="js/user-details.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

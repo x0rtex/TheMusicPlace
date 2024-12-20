@@ -1,0 +1,434 @@
+{
+    "basses": [
+        {
+            "name": "Thunderbolt TB-5",
+            "description": "A high-performance 5-string bass guitar with a mahogany neck and ash body. Featuring a pair of humbucking pickups and a 3-band EQ.",
+            "price": 1299.99,
+            "stock": 8,
+            "image": "../images/products/thunderbolt-tb-5.webp"
+        },
+        {
+            "name": "Riffmaster RB-4",
+            "description": "A versatile 4-string bass guitar with a maple neck and alder body. Featuring a single humbucking pickup and a 2-band EQ.",
+            "price": 899.99,
+            "stock": 12,
+            "image": "../images/products/riffmaster-rb-4.webp"
+        },
+        {
+            "name": "Bassmaster BM-6",
+            "description": "A premium 6-string bass guitar with a walnut neck and mahogany body. Featuring a pair of active pickups and a 4-band EQ.",
+            "price": 1999.99,
+            "stock": 5,
+            "image": "../images/products/bassmaster-bm-6.webp"
+        },
+        {
+            "name": "Funkmaster FB-5",
+            "description": "A high-energy 5-string bass guitar with a rosewood neck and ash body. Featuring a pair of humbucking pickups and a 3-band EQ.",
+            "price": 1099.99,
+            "stock": 9,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "GrooveMaster GM-4",
+            "description": "A smooth-playing 4-string bass guitar with a maple neck and alder body. Featuring a single humbucking pickup and a 2-band EQ.",
+            "price": 799.99,
+            "stock": 15,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Thunderbolt TB-6",
+            "description": "A high-performance 6-string bass guitar with a mahogany neck and ash body. Featuring a pair of humbucking pickups and a 3-band EQ.",
+            "price": 1499.99,
+            "stock": 6,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Riffmaster RB-5",
+            "description": "A versatile 5-string bass guitar with a maple neck and alder body. Featuring a single humbucking pickup and a 2-band EQ.",
+            "price": 999.99,
+            "stock": 10,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Bassmaster BM-5",
+            "description": "A premium 5-string bass guitar with a walnut neck and mahogany body. Featuring a pair of active pickups and a 4-band EQ.",
+            "price": 1799.99,
+            "stock": 4,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Funkmaster FB-6",
+            "description": "A high-energy 6-string bass guitar with a rosewood neck and ash body. Featuring a pair of humbucking pickups and a 3-band EQ.",
+            "price": 1399.99,
+            "stock": 7,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "GrooveMaster GM-5",
+            "description": "A smooth-playing 5-string bass guitar with a maple neck and alder body. Featuring a single humbucking pickup and a 2-band EQ.",
+            "price": 899.99,
+            "stock": 11,
+            "image": "https://i.imgur.com/4p9f897.png"
+        }
+    ],
+    "guitars": [
+        {
+            "name": "Viper VX-1",
+            "description": "A high-performance electric guitar with a mahogany neck and alder body. Featuring a pair of humbucking pickups and a 3-way switch.",
+            "price": 999.99,
+            "stock": 9,
+            "image": "../images/products/viper-vx-1.webp"
+        },
+        {
+            "name": "Raven RG-2",
+            "description": "A versatile electric guitar with a maple neck and ash body. Featuring a single humbucking pickup and a 2-way switch.",
+            "price": 699.99,
+            "stock": 12,
+            "image": "../images/products/raven-rg-2.webp"
+        },
+        {
+            "name": "Blaze BL-1",
+            "description": "A high-energy electric guitar with a rosewood neck and mahogany body. Featuring a pair of humbucking pickups and a 3-way switch.",
+            "price": 1299.99,
+            "stock": 6,
+            "image": "../images/products/blaze-bl-1.webp"
+        },
+        {
+            "name": "Storm ST-3",
+            "description": "A premium electric guitar with a walnut neck and alder body. Featuring a pair of active pickups and a 4-way switch.",
+            "price": 1999.99,
+            "stock": 4,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Fury FT-2",
+            "description": "A high-performance electric guitar with a mahogany neck and ash body. Featuring a pair of humbucking pickups and a 3-way switch.",
+            "price": 1099.99,
+            "stock": 8,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Vandal VA-1",
+            "description": "A versatile electric guitar with a maple neck and alder body. Featuring a single humbucking pickup and a 2-way switch.",
+            "price": 799.99,
+            "stock": 10,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Maverick MV-3",
+            "description": "A high-energy electric guitar with a rosewood neck and mahogany body. Featuring a pair of humbucking pickups and a 3-way switch.",
+            "price": 1499.99,
+            "stock": 7,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Rebel RB-2",
+            "description": "A premium electric guitar with a walnut neck and alder body. Featuring a pair of active pickups and a 4-way switch.",
+            "price": 1799.99,
+            "stock": 5,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Thunder TT-1",
+            "description": "A high-performance electric guitar with a mahogany neck and ash body. Featuring a pair of humbucking pickups and a 3-way switch.",
+            "price": 999.99,
+            "stock": 9,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Apex AP-3",
+            "description": "A high-end electric guitar with a rosewood neck and mahogany body. Featuring a pair of humbucking pickups and a 3-way switch.",
+            "price": 2499.99,
+            "stock": 3,
+            "image": "https://i.imgur.com/4p9f897.png"
+        }
+    ],
+    "audio-interfaces": [
+        {
+            "name": "Aurora AI-4",
+            "description": "A compact 4-channel audio interface with 24-bit/192kHz resolution and USB connectivity. Ideal for solo artists and small studios.",
+            "price": 299.99,
+            "stock": 12,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Apex AI-8",
+            "description": "A professional 8-channel audio interface with 24-bit/192kHz resolution and Thunderbolt connectivity. Suitable for large studios and live sound applications.",
+            "price": 999.99,
+            "stock": 6,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Pulse AI-2",
+            "description": "A portable 2-channel audio interface with 24-bit/96kHz resolution and USB connectivity. Perfect for musicians on-the-go.",
+            "price": 199.99,
+            "stock": 15,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Sonic AI-6",
+            "description": "A high-end 6-channel audio interface with 24-bit/192kHz resolution and USB connectivity. Ideal for professional studios and producers.",
+            "price": 699.99,
+            "stock": 9,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Fusion AI-4",
+            "description": "A compact 4-channel audio interface with 24-bit/96kHz resolution and USB connectivity. Suitable for small studios and home recording.",
+            "price": 249.99,
+            "stock": 11,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Proxima AI-8",
+            "description": "A professional 8-channel audio interface with 24-bit/192kHz resolution and Thunderbolt connectivity. Ideal for large studios and live sound applications.",
+            "price": 1299.99,
+            "stock": 5,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Nova AI-2",
+            "description": "A compact 2-channel audio interface with 24-bit/96kHz resolution and USB connectivity. Perfect for solo artists and small studios.",
+            "price": 149.99,
+            "stock": 18,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Vista AI-6",
+            "description": "A high-end 6-channel audio interface with 24-bit/192kHz resolution and USB connectivity. Suitable for professional studios and producers.",
+            "price": 899.99,
+            "stock": 8,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Lumina AI-4",
+            "description": "A compact 4-channel audio interface with 24-bit/96kHz resolution and USB connectivity. Ideal for small studios and home recording.",
+            "price": 299.99,
+            "stock": 13,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Axiom AI-8",
+            "description": "A professional 8-channel audio interface with 24-bit/192kHz resolution and Thunderbolt connectivity. Suitable for large studios and live sound applications.",
+            "price": 1499.99,
+            "stock": 4,
+            "image": "https://i.imgur.com/4p9f897.png"
+        }
+    ],
+    "effect-pedals": [
+        {
+            "name": "Tone Titan Overdrive",
+            "description": "A high-gain overdrive pedal with a wide range of tonal options. Features a 3-band EQ and a built-in boost circuit.",
+            "price": 149.99,
+            "stock": 12,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Bassquake Subsonic Distortion",
+            "description": "A high-output distortion pedal designed specifically for bass guitar. Features a 2-band EQ and a built-in low-end boost.",
+            "price": 199.99,
+            "stock": 8,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Echoflux Delay",
+            "description": "A versatile delay pedal with a wide range of delay times and tonal options. Features a built-in looper and a tap tempo function.",
+            "price": 249.99,
+            "stock": 10,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Fuzzzilla Fuzz Pedal",
+            "description": "A high-gain fuzz pedal with a wide range of tonal options. Features a 2-band EQ and a built-in boost circuit.",
+            "price": 129.99,
+            "stock": 15,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Reverbomatic Spring Reverb",
+            "description": "A high-quality spring reverb pedal with a wide range of tonal options. Features a built-in tremolo circuit and a 3-spring tank.",
+            "price": 299.99,
+            "stock": 6,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Phaser Phrenzy Phaser Pedal",
+            "description": "A versatile phaser pedal with a wide range of tonal options. Features a 2-band EQ and a built-in boost circuit.",
+            "price": 179.99,
+            "stock": 11,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Compressor Pro Compression Pedal",
+            "description": "A high-quality compression pedal with a wide range of tonal options. Features a 2-band EQ and a built-in limiter circuit.",
+            "price": 199.99,
+            "stock": 9,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Wah Wah Wizard Wah Pedal",
+            "description": "A high-quality wah pedal with a wide range of tonal options. Features a 2-band EQ and a built-in boost circuit.",
+            "price": 149.99,
+            "stock": 13,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Chorus Champion Chorus Pedal",
+            "description": "A versatile chorus pedal with a wide range of tonal options. Features a 2-band EQ and a built-in boost circuit.",
+            "price": 129.99,
+            "stock": 14,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Flanger Frenzy Flanger Pedal",
+            "description": "A high-quality flanger pedal with a wide range of tonal options. Features a 2-band EQ and a built-in boost circuit.",
+            "price": 179.99,
+            "stock": 10,
+            "image": "https://i.imgur.com/4p9f897.png"
+        }
+    ],
+    "microphones": [
+        {
+            "name": "Aurora AX-1 Condenser Microphone",
+            "description": "A high-quality condenser microphone with a wide frequency response and low self-noise. Ideal for studio recording and live performances.",
+            "price": 299.99,
+            "stock": 12,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Apex AP-55 Dynamic Microphone",
+            "description": "A rugged and reliable dynamic microphone with a cardioid polar pattern and high SPL handling. Perfect for live performances and public speaking.",
+            "price": 149.99,
+            "stock": 15,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Pulse PM-7 Ribbon Microphone",
+            "description": "A high-end ribbon microphone with a warm and smooth sound. Ideal for studio recording and capturing delicate vocals and instruments.",
+            "price": 499.99,
+            "stock": 6,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Sonic SS-1 USB Microphone",
+            "description": "A plug-and-play USB microphone with a condenser capsule and built-in headphone amplifier. Perfect for podcasting, voiceovers, and online conferencing.",
+            "price": 99.99,
+            "stock": 20,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Fusion FM-2 Wireless Microphone",
+            "description": "A reliable and easy-to-use wireless microphone system with a compact receiver and long battery life. Ideal for live performances and public speaking.",
+            "price": 249.99,
+            "stock": 10,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Triton TT-3 Shotgun Microphone",
+            "description": "A high-quality shotgun microphone with a supercardioid polar pattern and high SPL handling. Perfect for film and television production, as well as live performances.",
+            "price": 399.99,
+            "stock": 8,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Lumina LM-1 Lavalier Microphone",
+            "description": "A compact and lightweight lavalier microphone with a omnidirectional polar pattern and long battery life. Ideal for public speaking, film, and television production.",
+            "price": 199.99,
+            "stock": 12,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Voyager VM-2 Vocal Microphone",
+            "description": "A high-quality dynamic microphone with a cardioid polar pattern and high SPL handling. Perfect for live performances and studio recording.",
+            "price": 299.99,
+            "stock": 9,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Pinnacle PM-9 Large Diaphragm Microphone",
+            "description": "A high-end large diaphragm microphone with a wide frequency response and low self-noise. Ideal for studio recording and capturing delicate vocals and instruments.",
+            "price": 699.99,
+            "stock": 5,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Apex AP-77 Instrument Microphone",
+            "description": "A rugged and reliable dynamic microphone with a cardioid polar pattern and high SPL handling. Perfect for capturing loud instruments such as drums and guitar amps.",
+            "price": 249.99,
+            "stock": 11,
+            "image": "https://i.imgur.com/4p9f897.png"
+        }
+    ],
+    "percussion": [
+        {
+            "name": "Thunderbolt TB-5 Drumkit",
+            "description": "A high-quality 5-piece drumkit with a mahogany shell and chrome hardware. Includes a 22\" bass drum, 10\" and 12\" rack toms, 16\" floor tom, and 14\" snare drum.",
+            "price": 999.99,
+            "stock": 6,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Pulse PD-4 Bongo Set",
+            "description": "A high-quality bongo set with a durable wood shell and chrome hardware. Includes a 7\" and 8.5\" bongo drum.",
+            "price": 299.99,
+            "stock": 12,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Apex AP-6 Conga Set",
+            "description": "A high-quality conga set with a durable wood shell and chrome hardware. Includes a 10\", 11\", and 12\" conga drum.",
+            "price": 499.99,
+            "stock": 8,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Sonic SS-1 Snare Drum",
+            "description": "A high-quality 14\" snare drum with a mahogany shell and chrome hardware.",
+            "price": 199.99,
+            "stock": 15,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Fusion FM-5 Drumkit",
+            "description": "A high-quality 5-piece drumkit with a birch shell and chrome hardware. Includes a 22\" bass drum, 10\" and 12\" rack toms, 16\" floor tom, and 14\" snare drum.",
+            "price": 799.99,
+            "stock": 10,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Triton TT-3 Timbale Set",
+            "description": "A high-quality timbale set with a durable steel shell and chrome hardware. Includes a 13\", 14\", and 15\" timbale drum.",
+            "price": 399.99,
+            "stock": 9,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Lumina LM-1 Cajon",
+            "description": "A high-quality cajon with a durable wood shell and chrome hardware.",
+            "price": 149.99,
+            "stock": 18,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Voyager VM-2 Drum Pad",
+            "description": "A high-quality drum pad with a durable rubber surface and adjustable sensitivity.",
+            "price": 99.99,
+            "stock": 20,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Pinnacle PM-9 Drumkit",
+            "description": "A high-end 9-piece drumkit with a mahogany shell and chrome hardware. Includes a 24\" bass drum, 12\" and 13\" rack toms, 16\" and 18\" floor toms, and 14\" snare drum.",
+            "price": 1499.99,
+            "stock": 4,
+            "image": "https://i.imgur.com/4p9f897.png"
+        },
+        {
+            "name": "Apex AP-77 Tambourine",
+            "description": "A high-quality tambourine with a durable steel shell and chrome hardware.",
+            "price": 49.99,
+            "stock": 25,
+            "image": "https://i.imgur.com/4p9f897.png"
+        }
+    ]
+}

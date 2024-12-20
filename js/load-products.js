@@ -9,7 +9,7 @@ export async function loadProducts(category) {
 
 async function getProducts(category) {
     try {
-        const response = await fetch('../data/products/products.json');
+        const response = await fetch('../data/products.json');
         const data = await response.json();
         return data[category];
     } catch (error) {
@@ -34,7 +34,7 @@ function createCard(product) {
       <div class="card-body">
         <h5 class="card-title">${product.name}</h5>
         <p class="card-text">${product.description}</p>
-        <p class="card-text">${product.stock} in stock</p>
+        <p class="card-text card-stock">${product.stock} in stock</p>
       </div>
       <div class="card-body card-footer">
         <p class="card-price">€${product.price}</p>
