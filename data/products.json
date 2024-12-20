@@ -98,7 +98,7 @@
             "description": "A premium electric guitar with a walnut neck and alder body. Featuring a pair of active pickups and a 4-way switch.",
             "price": 1999.99,
             "stock": 4,
-            "image": "https://i.imgur.com/4p9f897.png"
+            "image": "../images/products/storm-st-3.webp"
         },
         {
             "name": "Fury FT-2",
@@ -149,7 +149,7 @@
             "description": "A compact 4-channel audio interface with 24-bit/192kHz resolution and USB connectivity. Ideal for solo artists and small studios.",
             "price": 299.99,
             "stock": 12,
-            "image": "https://i.imgur.com/4p9f897.png"
+            "image": "../images/products/aurora-ai-4.webp"
         },
         {
             "name": "Apex AI-8",
@@ -221,7 +221,7 @@
             "description": "A high-gain overdrive pedal with a wide range of tonal options. Features a 3-band EQ and a built-in boost circuit.",
             "price": 149.99,
             "stock": 12,
-            "image": "https://i.imgur.com/4p9f897.png"
+            "image": "../images/products/tone-titan-overdrive.webp"
         },
         {
             "name": "Bassquake Subsonic Distortion",
@@ -293,7 +293,7 @@
             "description": "A high-quality condenser microphone with a wide frequency response and low self-noise. Ideal for studio recording and live performances.",
             "price": 299.99,
             "stock": 12,
-            "image": "https://i.imgur.com/4p9f897.png"
+            "image": "../images/products/aurora-ax-1.webp"
         },
         {
             "name": "Apex AP-55 Dynamic Microphone",
@@ -365,7 +365,7 @@
             "description": "A high-quality 5-piece drumkit with a mahogany shell and chrome hardware. Includes a 22\" bass drum, 10\" and 12\" rack toms, 16\" floor tom, and 14\" snare drum.",
             "price": 999.99,
             "stock": 6,
-            "image": "https://i.imgur.com/4p9f897.png"
+            "image": "../images/products/thunderbolt-tb-5-drumkit.webp"
         },
         {
             "name": "Pulse PD-4 Bongo Set",
