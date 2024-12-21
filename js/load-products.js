@@ -20,10 +20,13 @@ async function getProducts(category) {
 
 function renderProducts(products) {
     const productsElement = document.getElementById('products');
+    productsElement.innerHTML = "";
+
     products.forEach(product => {
         const productHTML = createCard(product);
         productsElement.innerHTML += productHTML;
     });
+
     addEventListeners();
 }
 
@@ -38,15 +41,51 @@ function createCard(product) {
       </div>
       <div class="card-body card-footer">
         <p class="card-price">€${product.price}</p>
-        <a id="add-to-cart" class="btn btn-primary card-button">Add to cart</a>
+        <button 
+          class="btn btn-primary card-button add-to-cart" 
+          data-id="${product.id}" 
+          data-name="${product.name}" 
+          data-price="${product.price}"
+        >Add to Cart</button>
       </div>
     </div>
   `;
 }
 
+export function updateCheckoutUI() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || {};
+  const totalItems = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
+
+  const checkoutElement = document.querySelector("#checkout");
+  if (checkoutElement) {
+    checkoutElement.innerHTML = `<span class="checkout-count">${totalItems}</span>`;
+  }
+}
+
+function addToCart(itemId, itemName) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || {};
+
+    if (cart[itemId]) {
+        cart[itemId].quantity += 1;
+    } else {
+        cart[itemId] = {name: itemName, quantity: 1};
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    updateCheckoutUI();
+}
+
 function addEventListeners() {
-    const addToCartElements = document.querySelectorAll('#add-to-cart');
-    addToCartElements.forEach(element => {
-        element.addEventListener("click", addToCart);
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            const productId = event.target.getAttribute('data-id');
+            const productName = event.target.getAttribute('data-name');
+            const productPrice = event.target.getAttribute('data-price');
+            addToCart(productId, productName, productPrice);
+        });
     });
 }
+
+updateCheckoutUI();
