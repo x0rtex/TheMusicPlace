@@ -28,7 +28,7 @@ function handlePurchaseConfirmation(event) {
     const cardNumber = document.getElementById('cardNumber').value;
     const cardCvv = document.getElementById('cardCvv').value;
 
-    if (cardNumber === "1234 5678 9102 3456" && cardCvv === "123") {
+    if (cardNumber === "1234 5678 9102 3456" && cardCvv === "123" && checkout !== "0") {
         showPaymentSuccess();
         resetCheckoutNumber();
     } else {
