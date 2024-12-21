@@ -46,6 +46,7 @@ function createCard(product) {
           data-id="${product.id}" 
           data-name="${product.name}" 
           data-price="${product.price}"
+          data-image="${product.image}"
         >Add to Cart</button>
       </div>
     </div>
@@ -62,17 +63,21 @@ export function updateCheckoutUI() {
   }
 }
 
-function addToCart(itemId, itemName) {
+function addToCart(itemId, itemName, itemPrice, itemImage) {
     let cart = JSON.parse(localStorage.getItem('cart')) || {};
 
     if (cart[itemId]) {
         cart[itemId].quantity += 1;
     } else {
-        cart[itemId] = {name: itemName, quantity: 1};
+        cart[itemId] = {
+            name: itemName,
+            price: itemPrice,
+            image: itemImage,
+            quantity: 1
+        };
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
-
     updateCheckoutUI();
 }
 
@@ -83,7 +88,8 @@ function addEventListeners() {
             const productId = event.target.getAttribute('data-id');
             const productName = event.target.getAttribute('data-name');
             const productPrice = event.target.getAttribute('data-price');
-            addToCart(productId, productName, productPrice);
+            const productImage = event.target.getAttribute('data-image');
+            addToCart(productId, productName, productPrice, productImage);
         });
     });
 }

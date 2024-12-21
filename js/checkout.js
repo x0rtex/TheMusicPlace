@@ -49,75 +49,61 @@ function renderCart() {
   totalContainer.innerHTML = "";
 
   if (Object.keys(cart).length === 0) {
-    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
-    updateCheckoutUI();
     return;
   }
 
+  let totalPrice = 0;
+
   Object.entries(cart).forEach(([productId, product]) => {
-    const { name, quantity } = product;
+    const { name, price, image, quantity } = product;
+    const itemTotal = price * quantity;
 
     const itemHTML = `
       <div class="cart-item" data-id="${productId}">
+        <img src="${image}" alt="${name}" class="cart-item-image" style="width: 100px; height: auto;">
         <div class="cart-item-details">
-          <h5>${name}</h5>
+          <h5>${name}</h5> 
+          <p>Price: €${price}</p>
           <p>Quantity: 
-            <button class="update-quantity" data-update="decrement">-</button> 
+            <button class="update-quantity" data-update="decrement" data-id="${productId}">-</button> 
             <span class="item-quantity">${quantity}</span>
-            <button class="update-quantity" data-update="increment">+</button>
+            <button class="update-quantity" data-update="increment" data-id="${productId}">+</button>
           </p>
+          <p>Total: €${itemTotal}</p>
         </div>
       </div>
     `;
 
     cartContainer.innerHTML += itemHTML;
+    totalPrice += itemTotal;
   });
 
-  totalContainer.innerHTML = `<h3>Total: Not Applicable</h3>`;
-
+  totalContainer.innerHTML = `<h3>Total: €${totalPrice.toFixed(2)}</h3>`;
   updateCheckoutUI();
 }
 
 function addListeners() {
   const cartItems = document.getElementById("cart-items");
-
   cartItems.addEventListener("click", (event) => {
-    const parentItem = event.target.closest(".cart-item");
-    const productId = parentItem.getAttribute("data-id");
-
-    if (event.target.classList.contains("update-quantity")) {
-      const action = event.target.getAttribute("data-update");
-      updateItemQuantity(productId, action);
-    }
+      if (event.target.classList.contains("update-quantity")) {
+          const itemId = event.target.dataset.id
+          const change = event.target.dataset.update === "increment" ? 1 : -1;
+          updateItemQuantity(itemId, change);
+      }
   });
 }
 
-function updateItemQuantity(productId, action) {
-  const cart = getCart();
+function updateItemQuantity(itemId, change) {
+  const cart = JSON.parse(localStorage.getItem('cart')) || {};
 
-  if (cart[productId]) {
-    if (action === "increment") {
-      cart[productId].quantity += 1;
-    } else if (action === "decrement") {
-      cart[productId].quantity -= 1;
-      if (cart[productId].quantity <= 0) {
-        removeItemFromCart(productId);
-      }
+    if (!cart[itemId]) return;
+
+    cart[itemId].quantity += change;
+    if (cart[itemId].quantity <= 0) {
+        delete cart[itemId];
     }
-
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem('cart', JSON.stringify(cart));
     renderCart();
-  }
-}
-
-function removeItemFromCart(productId) {
-  const cart = getCart();
-
-  if (cart[productId]) {
-    delete cart[productId];
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCart();
-  }
 }
 
 function resetCart() {
