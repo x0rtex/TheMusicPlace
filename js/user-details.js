@@ -1,12 +1,12 @@
 if (localStorage.getItem('user-details') === null) {
 
     let userDetails = {
-        firstName: "Walter",
-        lastName: "Mitty",
-        dateOfBirth: "1990-12-01",
-        address1: "Buenos Ayres Drive",
-        address2: "Strandhill",
-        address3: "Co. Sligo"
+        firstName: "Firstname",
+        lastName: "Surname",
+        dateOfBirth: "1999-01-01",
+        address1: "Main Street",
+        address2: "Sligo",
+        address3: "Ireland"
     };
 
     document.getElementById("firstNameID").setAttribute('value',userDetails.firstName);
