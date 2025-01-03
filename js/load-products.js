@@ -63,6 +63,23 @@ export function updateCheckoutUI() {
   }
 }
 
+function showToast(message) {
+  const toastContainer = document.createElement('div');
+  toastContainer.className = 'toast-container position-fixed bottom-0 end-0 p-3';
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.innerHTML = `
+    <div class="toast-header">
+      <strong class="me-auto">TheMusicPlace</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">${message}</div>
+  `;
+  toastContainer.appendChild(toast);
+  document.body.appendChild(toastContainer);
+  new bootstrap.Toast(toast, { autohide: true, delay: 2000 }).show();
+}
+
 function addToCart(itemId, itemName, itemPrice, itemImage) {
     let cart = JSON.parse(localStorage.getItem('cart')) || {};
 
@@ -78,6 +95,7 @@ function addToCart(itemId, itemName, itemPrice, itemImage) {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
+    showToast('Item added to cart!');
     updateCheckoutUI();
 }
 
